@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
-import { AppComponent } from './app.component';
+import { AppComponent, GoodDataSdkFactory } from './app.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    CommonModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    GoodDataSdkFactory
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
